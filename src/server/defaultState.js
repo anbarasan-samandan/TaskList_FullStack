@@ -35,14 +35,14 @@ export const defaultState = {
   ],
   tasks: [
     {
-      name: "Do tests",
+      name: "Create tests using JEST",
       id: "T1",
       group: "G1",
       owner: "U1",
       isComplete: false,
     },
     {
-      name: "Learn React",
+      name: "Learn React and React Native",
       id: "T2",
       group: "G1",
       owner: "U1",
@@ -56,7 +56,7 @@ export const defaultState = {
       isComplete: false,
     },
     {
-      name: "Finalize Azure date",
+      name: "Learn Azure Dev Ops",
       id: "T2",
       group: "G3",
       owner: "U2",
