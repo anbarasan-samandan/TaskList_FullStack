@@ -5,7 +5,9 @@ import React from "react";
 const Navigation = () => (
   <div>
     <Link to="/dashboard">
-      <h1>Task List</h1>
+      <h1 style={{ textAlign: "center", color: "white", margin: "10px" }}>
+        Task List
+      </h1>
     </Link>
   </div>
 );

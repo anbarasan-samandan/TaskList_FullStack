@@ -3,13 +3,14 @@ import { connect } from "react-redux";
 import { ConnectedTaskList } from "./TaskList";
 
 export const Dashboard = ({ groups }) => (
-  <div className="row">
+  <div className="card-deck">
     {groups.map((group) => (
       <ConnectedTaskList
         key={group.id}
         id={group.id}
         name={group.name}
-        className="col"
+        className="card"
+        style={{ margin: "20px auto", float: "none" }}
       />
     ))}
   </div>

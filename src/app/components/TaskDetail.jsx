@@ -13,17 +13,23 @@ const TaskDetail = ({
   setTaskGroup,
   setTaskName,
 }) => (
-  <div className="card p-3 col-6">
+  <div
+    className="card bg-dark p-3 col-6"
+    style={{ margin: "20px auto", float: "none" }}
+  >
     <div>
       <input
         onChange={setTaskName}
         value={task.name}
-        className="form-control-lg"
+        className="form-control"
       />
     </div>
 
-    <div className="btn btn-primary mt-2">
-      <button onClick={() => setTaskCompletion(id, !isComplete)}>
+    <div>
+      <button
+        className="btn btn-dark btn-outline-warning mt-2"
+        onClick={() => setTaskCompletion(id, !isComplete)}
+      >
         {isComplete ? `Reopen` : `Complete`}
       </button>
     </div>
@@ -44,7 +50,7 @@ const TaskDetail = ({
 
     <div>
       <Link to="/dashboard">
-        <button className="btn btn-primary mt-2">Done</button>
+        <button className="btn btn-dark btn-outline-warning mt-2">Done</button>
       </Link>
     </div>
   </div>
